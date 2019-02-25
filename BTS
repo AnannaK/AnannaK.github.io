@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+<style>
+body {
+  font-family: 'Major Mono Display';
+  margin: 0 auto;
+  max-width: 800px;
+  background: url("https://i.pinimg.com/originals/ba/de/cd/badecded67a56f595b21a0c2b9566bb9.jpg");
+  background-size: 2700px;
+}
+
+div {
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Major Mono Display';
+  text-align: center;
+  font-size: 59px;
+  color: grey;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-size: 30;
+  text-align: center;
+  color: white;
+  margin: 25px 0 30px 0;
+}
+p {
+  border-radius: 12px;
+  color: rgba(255,255,255,1);
+  background: grey;
+  background: linear-gradient(bottom, rgba(255,100,110,.7), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(255,100,110,.7), rgba(0,0,4,.4));
+  background: -moz-linear-gradient(bottom, rgba(255,100,110,.7), rgba(0,0,4,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 32px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+ul {
+  padding: 10px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+button {
+  font-family: 'Major Mono Display';
+  border-color: white;
+  border-radius: 10px;
+  background: grey;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  div {
+  height: 500px;
+  width: 800px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+  h1 {
+    font-family: 'Major Mono Display';
+    text-align: center;
+    font-size: 39px;
+    color: grey;
+    margin: 60px 0 0 0;
+  }
+  h2 {
+    font-size: 20;
+    text-align: center;
+    color: white;
+    margin: 25px 0 30px 0;
+  }
+  ul {
+  padding: 10px;
+  text-align: center;
+  }
+  li {
+    display: inline;
+    padding: 0px 0px 0px 0px;
+  }
+  button {
+    font-size: 10;
+    font-family: 'Major Mono Display';
+    border-color: white;
+    border-radius: 10px;
+    background: grey;
+    color: white;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<h1>bTS LOVe YOuRSeLF</h1>
+<h2>S.E.L.F. CONCePT pHOTOS</h2>
+
+<ul>
+  <li><button onclick=Sconceptphotos()>SELF: Version S</button></li>
+  <li><button onclick=Econceptphotos()>SELF: Version E</button></li>
+  <li><button onclick=Lconceptphotos()>SELF: Version L</button></li>
+  <li><button onclick=Fconceptphotos()>SELF: Version F</button></li>
+</ul>
+
+<div id="object"></div>
+
+<script>
+
+function Sconceptphotos() {
+  objects = document.getElementById("object")
+  objects.innerHTML = ''
+  for (i=0; i<8; i=i+1) {
+    objects.innerHTML += SconceptphotosDivs[i]
+  }
+ 
+  items = document.getElementsByClassName("item")
+  for (i=0; i<8; i=i+1) {
+    items[i].style.background = SconceptphotosImages[i]
+  }
+}
+
+function Econceptphotos() {
+  objects = document.getElementById("object")
+  objects.innerHTML = ''
+  for (i=0; i<8; i=i+1) {
+    objects.innerHTML += EconceptphotosDivs[i]
+  }
+  
+  items = document.getElementsByClassName("item")  
+  for (i=0; i<8; i=i+1) {
+    items[i].style.background = EconceptphotosImages[i]
+  }
+}
+
+function Lconceptphotos() {
+  objects = document.getElementById("object")
+  objects.innerHTML = ''
+  for (i=0; i<8; i=i+1) {
+    objects.innerHTML += LconceptphotosDivs[i]
+  }
+  
+  items = document.getElementsByClassName("item")
+  for (i=0; i<8; i=i+1) {
+    items[i].style.background = LconceptphotosImages[i]
+  }
+}
+
+function Fconceptphotos() {
+  objects = document.getElementById("object")
+  objects.innerHTML = ''
+  for (i=0; i<8; i=i+1) {
+    objects.innerHTML += FconceptphotosDivs[i]
+  }
+  
+  items = document.getElementsByClassName("item")
+  for (i=0; i<8; i=i+1) {
+    items[i].style.background = FconceptphotosImages[i]
+  }
+}
+
+SconceptphotosImages = [
+  'url("http://bts.ibighit.com/img/photo/s_ver/1_s_bts.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/2_s_v.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/3_s_suga.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/4_s_jk.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/5_s_rm.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/6_s_jin.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/7_s_jh.jpg")',
+  'url("http://bts.ibighit.com/img/photo/s_ver/8_s_jimin.jpg")',
+]
+
+EconceptphotosImages = [
+  'url("http://bts.ibighit.com/img/photo/e_ver/1_e_bts.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/2_e_v.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/3_e_suga.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/4_e_jk.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/5_e_rm.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/6_e_jin.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/7_e_jh.jpg")',
+  'url("http://bts.ibighit.com/img/photo/e_ver/8_e_jimin.jpg")',
+]
+
+LconceptphotosImages = [
+  'url("http://bts.ibighit.com/img/photo/l_ver/1_l_bts.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/2_l_v.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/3_l_suga.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/4_l_jk.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/5_l_rm.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/6_l_jin.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/7_l_jh.jpg")',
+  'url("http://bts.ibighit.com/img/photo/l_ver/8_l_jimin.jpg")',
+]
+
+FconceptphotosImages = [
+  'url("http://bts.ibighit.com/img/photo/f_ver/1_f_bts.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/2_f_v.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/3_f_suga.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/4_f_jk.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/5_f_rm.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/6_f_jin.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/7_f_jh.jpg")',
+  'url("http://bts.ibighit.com/img/photo/f_ver/8_f_jimin.jpg")',
+]
+
+SconceptphotosDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: BTS<br /><small>The concept photos for S, is meant to be elegant and unique. Almost as if the jumped out of Alice in The Wonderland. their clothing gives them a modern victorian look.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: KIM TAEHYUNG<br /><small>Questions To Think About: Are those real hands for fake hands? Is he sitting in a box?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: MIN YOONGI<br /><small>Questions To Think About: What is he looking at? Are the ruffles around his neck cute or strange?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: JEON JUNGKOOK<br /><small>Questions To Think About: Why are there eyes behind him? How is he levitating like that?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: KIM NAMJOON<br /><small>Questions To Think About: What might the cameras represent? Does he looked squished?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: KIM SEOKJIN<br /><small>Questions To Think About: How high is this ceiling? Why is he squating onto of the box when he can sit on it?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: JUNG HOSEOK<br /><small>Questions To Think About: What makes you more confused, his sheer socks or his unique shorts? Did the ceiling shrink?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version S: PARK JIMIN<br /><small>Questions To Think About: Why is he so serious? Does he look uncomfortable or does he look like he is trying to escape?</small></p></div>',
+]
+
+EconceptphotosDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: BTS<br /><small>The concept photos for E, is meant to be sexy and mysterious. Their hung up appearence and clothing style emphasizes the doll-like image they are trying to achieve.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: KIM TAEHYUNG<br /><small>Questions To Think About: Is he in a bubble or glassball? Are there thorns on that rose bush?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: MIN YOONGI<br /><small>Questions To Think About: Is he sleeping? Are those real flowers, grass, and dirt?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: JEON JUNGKOOK<br /><small>Questions To Think About: Why are his eyes red? Did he cry? Is he mourning? What does that tree represent? </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: KIM NAMJOON<br /><small>Questions To Think About: How are those flowers floating? Why is he look like he has given up? </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: KIM SEOKJIN<br /><small>Questions To Think About: Does he look comfortable or awkward? What type of plant is that?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: JUNG HOSEOK<br /><small>Questions To Think About: What are the things on his hands? What type pf shoes is he wearing?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version E: PARK JIMIN<br /><small>Questions To Think About: What is he wearing? Is he trying to be a mummy? Why does he look so ad while touching the branch?</small></p></div>',
+]
+
+LconceptphotosDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: BTS<br /><small>The concept photos for L, is meant to be youthful with the uniforms, but also sporty with the athletic wear. The ripped parts of the photos makes the photos unique because it helps two different themes come together as one.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: KIM TAEHYUNG<br /><small>Questions To Think About: Does he have a pony tail? Is he trying to be cute? Where is he looking?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: MIN YOONGI<br /><small>Questions To Think About: Why is he shhing? Why is his right eye higher than his left eye?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: JEON JUNGKOOK<br /><small>Questions To Think About: Why is he wearing one earring? Is he smirking or smiling?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: KIM NAMJOON<br /><small>Questions To Think About: Is he scratching his head? Why does his right side look sweet while the left looks sultry?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: KIM SEOKJIN<br /><small>Questions To Think About: Is he surprised? Is he pukering his lips? Why is his hair so yellow?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: JUNG HOSEOK<br /><small>Questions To Think About: Is he forcing a smile? How is that his lips are perfectly lined up?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version L: PARK JIMIN<br /><small>Questions To Think About: Is he also scratching his head? Why is he pulling up the corner of his lip? why does he look so emotion less?</small></p></div>',
+]
+
+FconceptphotosDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: BTS<br /><small>The concept photos for F, is meant to be playful and cute. The use of bright blues and bright hues of colors completely captivates the observer making the world seem dull once they look away.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: KIM TAEHYUNG<br /><small>Questions To Think About: Does he look bored? Where do your eyes gravitate more towards, his eyes or hair?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: MIN YOONGI<br /><small>Questions To Think About: Is he really hanging? What type of expression is he making?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: JEON JUNGKOOK<br /><small>Questions To Think About: Does it hurt to sit on top of those monkey bars like that? Is he looking down at the viewer?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: KIM NAMJOON<br /><small>Questions To Think About: Why is he winking? What is he holding on to? How high do you think he is?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: KIM SEOKJIN<br /><small>Questions To Think About: What type of expression is he making? Why does he look stuck?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: JUNG HOSEOK<br /><small>Questions To Think About: Why did he pose like that? Why didnt he include his whole body in the picture?</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Version F: PARK JIMIN<br /><small>Questions To Think About: How did he get inside? How will he get out? Why does he look shocked?</small></p></div>',
+]
+
+</script>
+
+</body>
