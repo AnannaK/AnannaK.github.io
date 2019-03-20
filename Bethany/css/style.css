@@ -531,13 +531,13 @@ a, a:hover {
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   }
   .top-title {
-    font-size: 15px;
+    font-size: 25px;
   }
   .title {
     font-size: 50px;
   }
   .sub-title {
-    font-size: 24px;
+    font-size: 30px;
   }
   .footer-copyright {
     text-align: center;
