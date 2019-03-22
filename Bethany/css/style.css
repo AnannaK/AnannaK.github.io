@@ -487,21 +487,25 @@ a, a:hover {
 #footer {
   background-color: #FFD700;
   padding: 10px 0px;
+  margin: auto;
 }
 
 .footer-copyright {
   color: white;
   line-height: 22px;
   text-align: center;
+  margin: auto;
 }
 
 .footer-social {
   float: center;
+  margin:auto;
 }
 
 .footer-social a {
   font-size: 16px;
   color: white;
+  margin: auto;
 }
 
 .link-dec, .link-dec:hover {
