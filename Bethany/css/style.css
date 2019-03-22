@@ -485,13 +485,13 @@ a, a:hover {
 /****/
 
 #footer {
-  background-color: grey;
+  background-color: #FFD700;
   padding: 10px 0px;
 }
 
 .footer-copyright {
   color: white;
-  line-height: 32px;
+  line-height: 22px;
   text-align: center;
 }
 
@@ -500,12 +500,12 @@ a, a:hover {
 }
 
 .footer-social a {
-  font-size: 18px;
-  color: #33ccff;
+  font-size: 16px;
+  color: white;
 }
 
 .link-dec, .link-dec:hover {
-  color: #33ccff;
+  color: white;
 }
 
 /****/
