@@ -492,11 +492,11 @@ a, a:hover {
 .footer-copyright {
   color: white;
   line-height: 22px;
-  text-align: center;
+  text-align: right;
 }
 
 .footer-social {
-  float: center;
+  float: right;
 }
 
 .footer-social a {
@@ -539,7 +539,7 @@ a, a:hover {
     font-size: 30px;
   }
   .footer-copyright {
-    text-align: center;
+    text-align: right;
   }
   .padding-right-zero {
     padding-right: 15px;
