@@ -8,7 +8,6 @@
 body, h4, h2 {
   line-height: 1.5;
   font-family: 'Noto Serif KR';
-  overflow-x: hidden;
 }
 
 ol, ul {
