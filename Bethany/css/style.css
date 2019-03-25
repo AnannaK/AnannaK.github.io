@@ -486,12 +486,12 @@ a, a:hover {
 
 #footer {
   background-color: lightgrey;
-  padding: 0px 0px;
+  padding: 20px 0px;
 }
 
 .footer-copyright {
   color: white;
-  line-height: 32px;
+  line-height: 22px;
   text-align: center;
 }
 
