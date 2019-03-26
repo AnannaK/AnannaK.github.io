@@ -51,11 +51,12 @@ h3 {
 .main-header {
   background: url('https://hashtaglegend.com/storage/app/media/2018%20Articles/December%202018/BTS.jpg') no-repeat;
   background-size: cover;
-  min-height: 610px;
+  min-height: 1350px;
 }
 
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.5);
+  min-height: 1350px;
 }
 
 .nav>li>a {
