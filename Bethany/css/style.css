@@ -224,7 +224,8 @@ h3 {
 
 
 .cta-info {
-  border: 5px solid #cc0000;
+  border: 5px #cc0000;
+  border-style: dashed solid;
   padding: 40px 0px;
 }
 
