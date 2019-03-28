@@ -74,7 +74,7 @@ h3 {
 }
 
 .navbar-default .navbar-brand {
-  color: #fff;
+  color: #FAF0E6;
   font-size: 34px;
   text-transform: uppercase;
   font-weight: 700;
@@ -100,7 +100,7 @@ h3 {
 
 
 .navbar-default .navbar-nav>li>a {
-  color: #fff;
+  color: #FAF0E6;
   padding: 10px 20px;
   text-transform: uppercase;
 	background-color: transparent;
@@ -155,7 +155,7 @@ h3 {
 .sub-title {
   font-size: 50px;
   font-weight: 700;
-  color: white;
+  color: #FAF0E6;
   line-height: 71px;
   letter-spacing: 4px;
   opacity: 1;
@@ -165,7 +165,7 @@ h3 {
 .title {
   font-size: 123px;
   font-weight: 700;
-  color: white;
+  color: #FAF0E6;
   line-height: 88px;
   letter-spacing: 4px;
   opacity: 1;
@@ -189,7 +189,7 @@ h3 {
   font-weight: normal;
   border-radius: 0px;
   letter-spacing: 1px;
-  color: white;
+  color: #FAF0E6;
   position: relative;
   overflow: hidden;
   -webkit-transition: all 0.4s ease-in-out;
@@ -198,7 +198,7 @@ h3 {
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   margin-top: 25px;
-  border: 2px solid white;
+  border: 2px solid #FAF0E6;
 }
 
 
