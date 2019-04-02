@@ -190,7 +190,7 @@
         <div class="col-md-9 col-sm-12">
           <div class="col-md-4 col-sm-6 padding-right-zero">
             <div class="portfolio-box design">
-              <img src="https://i.pinimg.com/564x/d0/51/37/d05137fe639e17917abfbdb3cc538e43.jpg" alt="" class="img-responsive">
+              <img src="https://i.pinimg.com/564x/d0/51/37/d05137fe639e17917abfbdb3cc538e43.jpg" alt="" class="img-responsive item" onclick=info()>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 padding-right-zero">
@@ -277,8 +277,20 @@
   <script src="contactform/contactform.js"></script>
             
   
-  <!---->
-  <!--contact ends-->
+<script>
+	
+	items = document.getElementsByClassName("item")
+	function info() {
+		if (items[0].src == "https://i.pinimg.com/564x/d0/51/37/d05137fe639e17917abfbdb3cc538e43.jpg")
+			{items[0].src = 'https://i.pinimg.com/474x/c0/09/fa/c009fa2251754863d8cd681c7654faca.jpg'}
+		else {items[0].src = "https://i.pinimg.com/564x/d0/51/37/d05137fe639e17917abfbdb3cc538e43.jpg"} 
+		
+	}
+	
+	
+</script>
+
+
 
 </body>
 </html>
