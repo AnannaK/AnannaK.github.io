@@ -166,8 +166,8 @@ function draw() {
   }
 
 else { 
-	520 = touches[0].a
-	450 = touches[0].b
+	10 = touches[0].a
+	10 = touches[0].b
 }
 
   
