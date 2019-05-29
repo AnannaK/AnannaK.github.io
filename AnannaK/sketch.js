@@ -142,26 +142,27 @@ function draw() {
   
   
   
-  
-  fill(0, 0, 0)
-  circle(a*s,b,30*s) 
-  if (keyIsDown(LEFT_ARROW)) {
-    a = a - 10
-  }
-  if (keyIsDown(RIGHT_ARROW)) {
-    a = a + 10
-  }
-  if (keyIsDown(UP_ARROW)) {
-    b = b - 10
-  }
-  if (keyIsDown(DOWN_ARROW)) {
-    b = b + 10
-  }  
-  if ( a > width) {
-	a = 0
-  }
-  if ( b > height) {
-	b = 0
+  if (touches.length == 0)   {
+	 fill(0, 0, 0)
+  	 circle(a*s,b,30*s) 
+ 	 if (keyIsDown(LEFT_ARROW)) {
+	    a = a - 10
+	  }
+ 	 if (keyIsDown(RIGHT_ARROW)) {
+ 	   a = a + 10
+ 	 }
+ 	 if (keyIsDown(UP_ARROW)) {
+   	 b = b - 10
+	  }
+ 	 if (keyIsDown(DOWN_ARROW)) {
+  	  b = b + 10
+ 	 }  
+ 	 if ( a > width) {
+		a = 0
+ 	 }
+ 	 if ( b > height) {
+		b = 0
+  	}
   }
   
   for (j=0; j<allienumb; j=j+1) {
