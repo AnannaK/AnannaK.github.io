@@ -14,7 +14,7 @@
 
   
 let database = firebase.database()
-let scoreboard = { }
+let lvlboard = { }
 let user = document.getElementById("name")
 let a
 let b
@@ -223,7 +223,7 @@ function draw() {
 	  if (name != "") { 
         scoreboard[name] = level
 		}
-      alert("Scoreboard:" + JSON.stringify(scoreboard,null,1)) 
+      alert("Lvlboard:" + JSON.stringify(lvlboard,null,1)) 
         level = 1
         score = 0
         time = 60
@@ -245,8 +245,8 @@ function draw() {
       }
 
     function generate_leaderboard() {
-      scores = Object.values(scoreboard)
-      names = Object.keys(scoreboard)
+      scores = Object.values(lvlboard)
+      names = Object.keys(lvlboard)
   
       if (scores.length >= 3) {
         let leaderboard = { }
