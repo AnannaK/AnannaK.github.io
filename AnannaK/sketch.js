@@ -228,7 +228,7 @@ else {
       name = who.value
 	  database.ref(name).set(level)
 	  if (name != "") { 
-        scoreboard[name] = level
+        lvlboard[name] = level
 		}
       alert("Lvlboard:" + JSON.stringify(lvlboard,null,1)) 
         level = 1
